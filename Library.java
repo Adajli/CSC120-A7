@@ -131,9 +131,21 @@ public class Library extends Building {
         if (hasElevator) {
             super.goToFloor(floorNum);
         } else {
-            throw new RuntimeException("Can't go to another floor of " + name);
+            throw new RuntimeException("Can't go to another floor of " + name + ".");
         }
 
+    }
+
+    /**
+     * Overloaded enter method for cafe.
+     */
+    public Library enter() {
+        if (nFloors > 1) {
+            super.enter();
+        } else {
+            System.out.println("You entered " + name + ".");
+        }
+        return this;
     }
 
     // Main function for testing

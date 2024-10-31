@@ -50,7 +50,7 @@ public class Cafe extends Building {
         if (nFloors > 1) {
             super.enter();
         } else {
-            System.out.println("You entered " + name);
+            System.out.println("You entered " + name + ".");
         }
         return this;
     }
