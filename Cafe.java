@@ -33,6 +33,29 @@ public class Cafe extends Building {
     }
 
     /**
+     * Overlloaded cafe constructor for a small 1 floor cafe with storage in the
+     * back room.
+     * 
+     * @param name
+     * @param address
+     */
+    public Cafe(String name, String address) {
+        super(name, address);
+    }
+
+    /**
+     * Overlloaded enter method for cafe.
+     */
+    public Cafe enter() {
+        if (nFloors > 1) {
+            super.enter();
+        } else {
+            System.out.println("You entered " + name);
+        }
+        return this;
+    }
+
+    /**
      * Sell Coffe method
      * 
      * @param size
