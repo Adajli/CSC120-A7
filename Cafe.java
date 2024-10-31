@@ -33,7 +33,7 @@ public class Cafe extends Building {
     }
 
     /**
-     * Overlloaded cafe constructor for a small 1 floor cafe with storage in the
+     * Overloaded cafe constructor for a small 1 floor cafe with storage in the
      * back room.
      * 
      * @param name
@@ -44,7 +44,7 @@ public class Cafe extends Building {
     }
 
     /**
-     * Overlloaded enter method for cafe.
+     * Overloaded enter method for cafe.
      */
     public Cafe enter() {
         if (nFloors > 1) {
