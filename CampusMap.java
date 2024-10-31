@@ -11,6 +11,7 @@ public class CampusMap {
 
     /**
      * Adds a Building to the map
+     * 
      * @param b the Building to add
      */
     public void addBuilding(Building b) {
@@ -21,6 +22,7 @@ public class CampusMap {
 
     /**
      * Removes a Building from the map
+     * 
      * @param b the Building to remove
      * @return the removed Building
      */
@@ -34,17 +36,18 @@ public class CampusMap {
     public String toString() {
         String mapString = "DIRECTORY of BUILDINGS";
 
-        for (int i = 0; i < this.buildings.size(); i ++) {
-            mapString += "\n  " + (i+1) + ". "+ this.buildings.get(i).getName() + " (" + this.buildings.get(i).getAddress() + ")";
+        for (int i = 0; i < this.buildings.size(); i++) {
+            mapString += "\n  " + (i + 1) + ". " + this.buildings.get(i).getName() + " ("
+                    + this.buildings.get(i).getAddress() + ")";
         }
         return mapString;
     }
 
     public static void main(String[] args) {
         CampusMap myMap = new CampusMap();
-        myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4));
-        myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4));
+        myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4, true));
+        myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4, true));
         System.out.println(myMap);
     }
-    
+
 }

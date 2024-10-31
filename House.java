@@ -21,9 +21,9 @@ public class House extends Building {
      * @param nFloors
      * @param hasDiningRoom
      */
-    public House(String name, String address, int nFloors, boolean hasDiningRoom) {
+    public House(String name, String address, int nFloors, boolean hasDiningRoom, boolean hasElevator) {
         this.residents = new ArrayList<String>();
-        super(name, address, nFloors);
+        super(name, address, nFloors, hasElevator);
         this.hasDiningRoom = hasDiningRoom;
         System.out.println("You have built a house: 🏠");
     }
@@ -82,8 +82,13 @@ public class House extends Building {
         return this.residents.contains(person);
     }
 
+    public void showOptions() {
+        super.showOptions();
+        System.out.print(" \nisResident(person)\n + moveOut(name)\n + moveOut(name)\n");
+    }
+
     public static void main(String[] args) {
-        House myHome = new House("My Home", "10 Meadowview Road Basking Ridge, NJ", 2, true);
+        House myHome = new House("My Home", "10 Meadowview Road Basking Ridge, NJ", 2, true, false);
         myHome.moveIn("Ada Li");
         myHome.moveIn("Hong Li");
         myHome.moveIn("Jin Chen");

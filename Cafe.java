@@ -24,7 +24,7 @@ public class Cafe extends Building {
      */
     public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams,
             int nCups) {
-        super(name, address, nFloors);
+        super(name, address, nFloors, true);
         this.nCoffeeOunces = nCoffeeOunces;
         this.nSugarPackets = nSugarPackets;
         this.nCreams = nCreams;
