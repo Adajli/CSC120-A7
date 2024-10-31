@@ -84,7 +84,7 @@ public class House extends Building {
 
     public void showOptions() {
         super.showOptions();
-        System.out.print(" \nisResident(person)\n + moveOut(name)\n + moveOut(name)\n");
+        System.out.print("\n + isResident(person)\n + moveOut(name)\n + moveOut(name)\n");
     }
 
     public static void main(String[] args) {
@@ -97,6 +97,7 @@ public class House extends Building {
         myHome.moveOut("Ada Li");
         System.out.println(myHome.hasDiningRoom());
         System.out.println(myHome.nResidents());
+        myHome.showOptions();
     }
 
 }
