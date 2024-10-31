@@ -23,8 +23,8 @@ public class Cafe extends Building {
      * @param nCups
      */
     public Cafe(String name, String address, int nFloors, int nCoffeeOunces, int nSugarPackets, int nCreams,
-            int nCups) {
-        super(name, address, nFloors, true);
+            int nCups, boolean hasElevator) {
+        super(name, address, nFloors, hasElevator);
         this.nCoffeeOunces = nCoffeeOunces;
         this.nSugarPackets = nSugarPackets;
         this.nCreams = nCreams;
@@ -66,8 +66,19 @@ public class Cafe extends Building {
         this.nCups += nCups;
     }
 
+    /**
+     * Available options for cafe
+     * 
+     * @return void
+     */
+    public void showOptions() {
+        super.showOptions();
+        System.out.println("\n + sellCoffee(int size, int nSugarPackets, int nCreams)\n  ");
+    }
+
     public static void main(String[] args) {
-        Cafe brewHaven = new Cafe("Brew Haven", "30 Meadwoview Road, Basking Ridge, New Jersey", 2, 100, 100, 20, 50);
+        Cafe brewHaven = new Cafe("Brew Haven", "30 Meadwoview Road, Basking Ridge, New Jersey", 2, 100, 100, 20, 50,
+                false);
         System.out.println(brewHaven);
         brewHaven.sellCoffee(12, 2, 3);
         brewHaven.sellCoffee(30, 2, 3);
