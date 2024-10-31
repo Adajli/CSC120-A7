@@ -82,9 +82,14 @@ public class House extends Building {
         return this.residents.contains(person);
     }
 
+    /**
+     * Available options for house
+     * 
+     * @return void
+     */
     public void showOptions() {
         super.showOptions();
-        System.out.print("\n + isResident(person)\n + moveOut(name)\n + moveOut(name)\n");
+        System.out.println("\n + isResident(person)\n + moveOut(name)\n + moveOut(name)\n");
     }
 
     public static void main(String[] args) {

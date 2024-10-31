@@ -54,6 +54,18 @@ public class Library extends Building {
     } // return the title that we removed
 
     /**
+     * Available options for library
+     * 
+     * @return void
+     */
+    public void showOptions() {
+        super.showOptions();
+        System.out.println("\n + removeTitle(title)\n + addTitle(title)\n + checkOut(title)\n + returnBook(title)\n"
+                + " + containsTitle(title)\n" + "+ isAvailable(title)\n + printCollection() ");
+
+    }
+
+    /**
      * Function to checkOut title
      * 
      * @param title
