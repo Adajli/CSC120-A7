@@ -76,6 +76,21 @@ public class Cafe extends Building {
         System.out.println("\n + sellCoffee(int size, int nSugarPackets, int nCreams)\n  ");
     }
 
+    /**
+     * Function for going to floor
+     * 
+     * @param floorNum
+     * @return void
+     */
+    public void goToFloor(int floorNum) {
+        if (nFloors <= 1) {
+            throw new RuntimeException("You can't go up any other floor.");
+        } else {
+            throw new RuntimeException("The upper floor is for storage only/accessible for employees.");
+        }
+
+    }
+
     public static void main(String[] args) {
         Cafe brewHaven = new Cafe("Brew Haven", "30 Meadwoview Road, Basking Ridge, New Jersey", 2, 100, 100, 20, 50,
                 false);
