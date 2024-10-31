@@ -135,11 +135,11 @@ public class Library extends Building {
         }
 
     }
+
     // Main function for testing
 
     public static void main(String[] args) {
         Library neilsonLibrary = new Library("Neilson Library", "7 Neilson Drive, Northampton, MA 01063", 4, true);
-        System.out.println(neilsonLibrary.toString());
         neilsonLibrary.addTitle("The Art of War");
         neilsonLibrary.addTitle("Astronomy");
         neilsonLibrary.addTitle("Flamer");
@@ -152,6 +152,7 @@ public class Library extends Building {
         neilsonLibrary.printCollection();
         neilsonLibrary.enter();
         neilsonLibrary.goToFloor(4);
+        System.out.println(neilsonLibrary.toString());
     }
 
 }
