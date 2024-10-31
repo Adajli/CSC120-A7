@@ -121,6 +121,20 @@ public class Library extends Building {
         System.out.println(
                 "\n + removeTitle(title)\n + addTitle(title)\n + checkOut(title)\n + returnBook(title)\n  + containsTitle(title)\n + isAvailable(title)\n + printCollection() ");
     }
+
+    /**
+     * Function for going to floor
+     * 
+     * @param floorNum
+     */
+    public void goToFloor(int floorNum) {
+        if (hasElevator) {
+            super.goToFloor(floorNum);
+        } else {
+            throw new RuntimeException("Can't go to another floor of " + name);
+        }
+
+    }
     // Main function for testing
 
     public static void main(String[] args) {
@@ -136,6 +150,8 @@ public class Library extends Building {
         neilsonLibrary.checkOut("Astronomy");
         neilsonLibrary.returnBook("Astronomy");
         neilsonLibrary.printCollection();
+        neilsonLibrary.enter();
+        neilsonLibrary.goToFloor(4);
     }
 
 }

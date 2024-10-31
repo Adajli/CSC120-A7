@@ -92,6 +92,20 @@ public class House extends Building {
         System.out.println("\n + isResident(person)\n + moveOut(name)\n + moveOut(name)\n");
     }
 
+    /**
+     * Function for going to floor
+     * 
+     * @param floorNum
+     */
+    public void goToFloor(int floorNum) {
+        if (hasElevator) {
+            super.goToFloor(floorNum);
+        } else {
+            throw new RuntimeException("Can't go to another floor of " + name);
+        }
+
+    }
+
     public static void main(String[] args) {
         House myHome = new House("My Home", "10 Meadowview Road Basking Ridge, NJ", 2, true, false);
         myHome.moveIn("Ada Li");
