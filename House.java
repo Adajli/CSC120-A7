@@ -29,6 +29,17 @@ public class House extends Building {
     }
 
     /**
+     * Overloaded house constructor for a small 1 floor house
+     * 
+     * 
+     * @param name
+     * @param address
+     */
+    public House(String name, String address) {
+        super(name, address);
+    }
+
+    /**
      * Accessor to check if the house has dining room
      * 
      * @return hasDiningRoom
@@ -106,6 +117,27 @@ public class House extends Building {
 
     }
 
+    /**
+     * Overloaded enter method for House.
+     */
+    public House enter() {
+        if (nFloors > 1) {
+            super.enter();
+        } else {
+            System.out.println("You entered " + name + ".");
+        }
+        return this;
+    }
+
+    /**
+     * To string method for house.
+     * 
+     * @return String information of the library.
+     */
+    public String toString() {
+        return super.toString() + " that has the residents: " + residents.toString() + ".";
+    }
+
     public static void main(String[] args) {
         House myHome = new House("My Home", "10 Meadowview Road Basking Ridge, NJ", 2, true, false);
         myHome.moveIn("Ada Li");
@@ -116,6 +148,7 @@ public class House extends Building {
         myHome.moveOut("Ada Li");
         System.out.println(myHome.hasDiningRoom());
         System.out.println(myHome.nResidents());
+        System.out.println(myHome.toString());
         myHome.showOptions();
     }
 
