@@ -58,6 +58,8 @@ public class CampusMap {
         myMap.addBuilding(new House("Northrop House", "49 Elm St, Northampton, MA 01063", 4, true, true));
         myMap.addBuilding(new House("Gillett House", "49 Elm St, Northampton, MA 01063", 4, true, true));
         myMap.addBuilding(new House("Morris House", "101 Green St, Northampton, MA 01060", 4, true, false));
+        myMap.addBuilding(new House("Washburn House", "4 Seelye Dr, Northampton, MA 01060", 3, false, false));
+        myMap.addBuilding(new House("Lawrence House", "99 Green St, Northampton, MA 01060", 4, false, false));
         talbot.moveIn("Ada Li");
         talbot.enter();
         talbot.exit();
