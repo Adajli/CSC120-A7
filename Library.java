@@ -24,6 +24,17 @@ public class Library extends Building {
     }
 
     /**
+     * Overloaded cafe constructor for a small 1 floor cafe
+     * 
+     * 
+     * @param name
+     * @param address
+     */
+    public Library(String name, String address) {
+        super(name, address);
+    }
+
+    /**
      * Function to add title
      * 
      * @param title
@@ -137,7 +148,7 @@ public class Library extends Building {
     }
 
     /**
-     * Overloaded enter method for cafe.
+     * Overloaded enter method for library.
      */
     public Library enter() {
         if (nFloors > 1) {
