@@ -24,7 +24,7 @@ __**YES**___ 1 pt: The `Cafe` class has a `goToFloor(...)` method that doesn't p
 
 ### Level 2: Method `Overloads` (3 pts)
 
-_____ 1 pt: The `House` class includes at least 2 overloaded methods
+___**YES**__ 1 pt: The `House` class includes at least 2 overloaded methods
 
 __**YES**___ 1 pt: The `Library` class includes at least 2 overloaded methods
 
@@ -56,6 +56,6 @@ ___**YES**__ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       ___**YES**__ Methods avoid confusing side effects
 
-_____ 1 pt: All required files included with submission (including completed `rubric.md` file)
+___**YES**__ 1 pt: All required files included with submission (including completed `rubric.md` file)
 
-_____ 1 pt: `reflection.md` contains your reflection on the assignment
+__**YES**___ 1 pt: `reflection.md` contains your reflection on the assignment
