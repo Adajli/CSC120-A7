@@ -115,6 +115,16 @@ public class Cafe extends Building {
 
     }
 
+    /**
+     * To string method for Library
+     * 
+     * @return String information of the library.
+     */
+    public String toString() {
+        return super.toString() + " with " + nCoffeeOunces + " coffee ounces," + nSugarPackets + " sugar packets,"
+                + nCreams + " creams" + nCups + " cups in the inventory.";
+    }
+
     public static void main(String[] args) {
         Cafe brewHaven = new Cafe("Brew Haven", "30 Meadwoview Road, Basking Ridge, New Jersey", 2, 100, 100, 20, 50,
                 false);
