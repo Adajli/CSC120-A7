@@ -47,14 +47,21 @@ public class CampusMap {
         CampusMap myMap = new CampusMap();
         myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4, true));
         myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4, true));
-        myMap.addBuilding(new Library("Neilson Library", "7 Neilson Drive, Northampton, MA 01063", 4, true));
-        myMap.addBuilding(new House("Talbot House", "25 Prospect St, Northampton, MA 01063", 5, false, true));
+        Library neilsonLibrary = new Library("Neilson Library", "7 Neilson Drive, Northampton, MA 01063", 4, true);
+        myMap.addBuilding(neilsonLibrary);
+        House talbot = new House("Talbot House", "25 Prospect St, Northampton, MA 01063", 5, false, true);
+        myMap.addBuilding(talbot);
         myMap.addBuilding(new Cafe("Campus Center Cafe", "100 Elm St, Northampton, MA 01063"));
         myMap.addBuilding(new House("Lamont House", "17 Prospect St, Northampton, MA 01060", 3, true, true));
-        myMap.buildings.get(2).enter();
-        myMap.buildings.get(3).enter();
+        neilsonLibrary.enter();
+        myMap.addBuilding(new House("Tyler House", "64 Green St, Northampton, MA 01060", 4, true, true));
+        myMap.addBuilding(new House("Northrop House", " 49 Elm St, Northampton, MA 01063", 5, true, true));
+        talbot.moveIn("Ada Li");
+        talbot.enter();
+        talbot.exit();
         myMap.buildings.get(4).enter();
-
+        neilsonLibrary.addTitle("The Art of War");
+        System.out.println(myMap.buildings.get(2).toString());
         System.out.println(myMap);
     }
 
