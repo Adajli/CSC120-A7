@@ -139,7 +139,7 @@ public class Library extends Building {
      * @param floorNum
      */
     public void goToFloor(int floorNum) {
-        if (hasElevator) {
+        if (hasElevator && floorNum >= 1) {
             super.goToFloor(floorNum);
         } else {
             throw new RuntimeException("Can't go to another floor of " + name + ".");
