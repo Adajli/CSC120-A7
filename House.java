@@ -129,15 +129,6 @@ public class House extends Building {
         return this;
     }
 
-    /**
-     * To string method for house.
-     * 
-     * @return String information of the library.
-     */
-    public String toString() {
-        return super.toString() + " that has the residents: " + residents.toString() + ".";
-    }
-
     public static void main(String[] args) {
         House myHome = new House("My Home", "10 Meadowview Road Basking Ridge, NJ", 2, true, false);
         myHome.moveIn("Ada Li");

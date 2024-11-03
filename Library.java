@@ -159,15 +159,6 @@ public class Library extends Building {
         return this;
     }
 
-    /**
-     * Overloaded toString method for Library
-     * 
-     * @return String information of the library.
-     */
-    public String toString() {
-        return super.toString() + " that contains the collection: " + collection.toString() + ".";
-    }
-
     // Main function for testing
 
     public static void main(String[] args) {
