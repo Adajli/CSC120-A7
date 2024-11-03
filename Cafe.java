@@ -33,7 +33,9 @@ public class Cafe extends Building {
     }
 
     /**
-     * Overloaded cafe constructor for a small 1 floor cafe
+     * Overloaded cafe constructor for a small 1 floor generic cafe with the only
+     * known name
+     * and address
      * 
      * 
      * @param name
@@ -106,7 +108,9 @@ public class Cafe extends Building {
      * @return void
      */
     public void goToFloor(int floorNum) {
-        super.goToFloor(floorNum);
+        if (hasElevator && floorNum == 1) {
+            super.goToFloor(floorNum);
+        }
         throw new RuntimeException("The upper floor is for storage only/accessible for employees.");
 
     }
