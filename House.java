@@ -30,13 +30,13 @@ public class House extends Building {
 
     /**
      * Overloaded house constructor for a small 1 floor house
-     * 
+     * with option to include dining room
      * 
      * @param name
      * @param address
      */
-    public House(String name, String address) {
-        super(name, address);
+    public House(String name, String address, boolean hasDiningRoom) {
+        this(name, address, 1, hasDiningRoom, false);
     }
 
     /**

@@ -31,7 +31,7 @@ public class Library extends Building {
      * @param address
      */
     public Library(String name, String address) {
-        super(name, address);
+        this(name, address, 1, false);
     }
 
     /**
