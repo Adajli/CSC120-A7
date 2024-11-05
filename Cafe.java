@@ -33,8 +33,9 @@ public class Cafe extends Building {
     }
 
     /**
-     * Overloaded cafe constructor for a small 1 floor generic cafe with the only
-     * known name
+     * Overloaded cafe constructor for a small 1 floor generic cafe with the
+     * specific number of coffee ounces, sugar packets, cups, and creams
+     * as well as known name
      * and address
      * 
      * 
@@ -43,6 +44,10 @@ public class Cafe extends Building {
      */
     public Cafe(String name, String address) {
         super(name, address);
+        this.nCoffeeOunces = 20;
+        this.nSugarPackets = 30;
+        this.nCreams = 30;
+        this.nCups = 20;
     }
 
     /**
