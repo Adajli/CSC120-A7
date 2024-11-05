@@ -43,11 +43,7 @@ public class Cafe extends Building {
      * @param address
      */
     public Cafe(String name, String address) {
-        super(name, address);
-        this.nCoffeeOunces = 20;
-        this.nSugarPackets = 30;
-        this.nCreams = 30;
-        this.nCups = 20;
+        this(name, address, 1, 20, 30, 30, 20, false);
     }
 
     /**
