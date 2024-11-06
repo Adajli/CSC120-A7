@@ -24,7 +24,7 @@ public class Library extends Building {
     }
 
     /**
-     * Overloaded cafe constructor for a small 1 floor cafe
+     * Overloaded cafe constructor for a small 1 floor library
      * 
      * 
      * @param name
