@@ -66,9 +66,9 @@ public class Cafe extends Building {
      * @param nCreams
      */
     public void sellCoffee(int size, int nSugarPackets, int nCreams) {
-        if (this.nSugarPackets < nSugarPackets || this.nCreams < nCreams || nCoffeeOunces < size) {
-            System.out.println("Not enough ingredients.");
+        if (this.nSugarPackets < nSugarPackets || this.nCreams < nCreams || nCoffeeOunces < size || nCups<1) {
             restock(nCoffeeOunces, nSugarPackets, nCreams, this.nCups);
+            throw new RuntimeException("Not enough ingredients.");
         } else {
             nCoffeeOunces -= size;
             this.nSugarPackets -= nSugarPackets;

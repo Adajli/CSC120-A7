@@ -22,8 +22,8 @@ public class House extends Building {
      * @param hasDiningRoom
      */
     public House(String name, String address, int nFloors, boolean hasDiningRoom, boolean hasElevator) {
-        this.residents = new ArrayList<String>();
         super(name, address, nFloors, hasElevator);
+        this.residents = new ArrayList<String>();
         this.hasDiningRoom = hasDiningRoom;
         System.out.println("You have built a house: 🏠");
     }

@@ -40,7 +40,7 @@ public class Library extends Building {
      * @param title
      */
     public void addTitle(String title) {
-        if (collection.contains(title)) {
+        if (collection.containsKey(title)) {
             System.out.println(collection);
             System.out.println(title);
             throw new RuntimeException("Can't add that title");
