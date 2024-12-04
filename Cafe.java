@@ -109,9 +109,6 @@ public class Cafe extends Building {
      * @return void
      */
     public void goToFloor(int floorNum) {
-        if (hasElevator && floorNum == 1) {
-            super.goToFloor(floorNum);
-        }
         throw new RuntimeException("The upper floor is for storage only/accessible for employees.");
 
     }

@@ -34,6 +34,7 @@ public class House extends Building {
      * 
      * @param name
      * @param address
+     * @param hasDiningRoom
      */
     public House(String name, String address, boolean hasDiningRoom) {
         this(name, address, 1, hasDiningRoom, false);
